@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let a = +prompt("Enter the 1st number");
+        let b = +prompt("Enter the 2nd number");
+        
+        /** 
+         * Функция вычисляет сумму параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} sum результат сложения двух чисел
+         * @returns {number} возвращает сумму двух чисел
+        */
+        function getSum(a, b){
+            let sum = a + b;
+            alert(sum);
+            return sum;
+        }
+        /** 
+         * Функция вычисляет разность параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} diff результат разности двух чисел
+         * @returns {number} возвращает разность двух чисел
+        */        
+        function getDiff(a, b){
+            let diff = a - b;
+            alert(diff);
+            return diff;
+        }
+        /** 
+         * Функция вычисляет произведение параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} mult результат произведение двух чисел
+         * @returns {number} возвращает произведение двух чисел
+        */
+        function getMult(a, b){
+            let mult = a * b;
+            alert(mult);
+            return mult;
+        }
+        /** 
+         * Функция вычисляет частное параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} div результат деления первого числа на второе
+         * @returns {number} возвращает частное двух чисел
+        */
+        function getDiv(a, b){
+            let div = a / b;
+            alert(div);
+            return div;
+        }
+        getSum(a,b);
+        getDiff(a,b)
+        getMult(a,b);
+        getDiv(a,b);
+    </script>
+</body>
+</html>
