@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        /** 
+         * Функция вычисляет сумму параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} sum результат сложения двух чисел
+         * @returns {number} возвращает сумму двух чисел
+        */
+        function getSum(a, b){
+            let sum = a + b;
+            return sum;
+        }
+        /** 
+         * Функция вычисляет разность параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} diff результат разности двух чисел
+         * @returns {number} возвращает разность двух чисел
+        */        
+        function getDiff(a, b){
+            let diff = a - b;
+            return diff;
+        }
+        /** 
+         * Функция вычисляет произведение параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} mult результат произведение двух чисел
+         * @returns {number} возвращает произведение двух чисел
+        */
+        function getMult(a, b){
+            let mult = a * b;
+            return mult;
+        }
+        /** 
+         * Функция вычисляет частное параметров
+         * @param {number} a первое число
+         * @param {number} b второе число
+         * @param {number} div результат деления первого числа на второе
+         * @returns {number} возвращает частное двух чисел
+        */
+        function getDiv(a, b){
+            let div = a / b;
+            return div;
+        }
+        /** 
+         * Функция выполняет ту или иную арифметическую операцию в зависимости от полученных аргументов и строки с названием операции
+         * @param {number} arg1 первый аргумент
+         * @param {number} arg2 второй аргумент
+         * @param {number} operation 1 - сумма, 2 - разность, 3 - произведение, 4 - частное
+         * @returns {number} возвращает результат арифметической операции
+        */
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 1:
+                    return getSum(arg1,arg2);
+                case 2:
+                    return getDiff(arg1,arg2);
+                case 3: 
+                return getMult(arg1,arg2);
+                case 4: 
+                return getDiv(arg1,arg2);
+
+            }
+        }
+
+console.log(mathOperation(5, 6, 1));
+console.log(mathOperation(7, 3, 2));
+console.log(mathOperation(4, 5, 3));
+console.log(mathOperation(10, 5, 4));
+    </script>
+</body>
+</html>
